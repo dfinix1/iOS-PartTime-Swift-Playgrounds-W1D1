@@ -10,12 +10,16 @@
 //: In swift, you create variables like this:
 
 var greeting = "Hello, world!"
-  
+greeting = "Wake Up Now!"
 //: There are three important parts to creating a variable: 1) writing `var` to show you are creating a new variable, 2) naming the variable,
 //: and 3) the data stored inside the variable
 //: In the example above, the name of the variable is `greeting` and the value is a string "Hello, world!"
 
-var count = 0
+var count:Double
+
+count = 1
+
+
 
 //: *Note:* In this case, the name of this variable is `count`, and the value is the number `0`
 
@@ -25,6 +29,7 @@ var count = 0
 //: For example, the following code changes the data stored in the `count` variable to the number 10.
 
 count = 10
+count = 10+1
 
 //: *Note:* To create a new variable we write `var` before the name, when we change the data inside an existing variable we do not.
 
@@ -69,11 +74,11 @@ count
 //: What type are the variables `tipAmount`, and `isOpen`?
 
 var tipAmount = 6.01
-// tipAmount's type is:
+// tipAmount's type is: Double
 
 
 var isOpen = true
-// isOpen's type is:
+// isOpen's type is: Bool
 
 
 //: ## Type Inference
@@ -83,11 +88,13 @@ var isOpen = true
 //:
 //: To create a Double, all we need to do is specify the type when we create the variable.
 
-var height: Double = 10
+var height: Double
+
+
 
 //: Since all our variables have types, even if we haven't specifically set them, we can't store any value in them... only values of the right type.
 //: Test this out. Try setting the value of `count` to be `height`:
-
+height = count
 
 
 //: It didn't work, right? They are both numbers, but `count` is an Int, and `height` is a `Double`. There are ways to convert the `Double` 10 into the `Int` 10, but we won't go into that just now.
@@ -104,5 +111,7 @@ var height: Double = 10
 var schoolName = "Lightouse Labs"
 
 
+schoolName.uppercased()
+schoolName.lowercased()
 
 //: THE END
